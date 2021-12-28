@@ -1,9 +1,12 @@
 package com.innup.opengles;
 
+import android.content.res.AssetManager;
+
 public class MethodFromNative {
     public native void onSurfaceCreated();
     public native void onSurfacechanged(int width, int height);
     public native void onDrawFrame();
+    public native void loadAssetsText(AssetManager assetManager);
 
     private static MethodFromNative methodFromNative;
 

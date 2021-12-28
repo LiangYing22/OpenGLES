@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         GLSurfaceView glSurfaceView = new LyGLSurfaceView(getApplicationContext());
         //设置界面加载的是一个OpenGL的窗口
         setContentView(glSurfaceView);
+        MethodFromNative.getInstance().loadAssetsText(getAssets());
     }
 
     /**
